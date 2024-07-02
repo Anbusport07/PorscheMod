@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Showroom.unity
     guid: b8b40baf77ffc4120b823beffae8d852
   - enabled: 0
     path: Assets/Samples/Meta XR Interaction SDK OVR Samples/65.0.0/Example Scenes/PanelWithManipulators.unity
     guid: bafd0df297556dd44832193b22fca1ae
-  - enabled: 0
+  - enabled: 1
     path: Assets/Anbu Raja/Scenes/Hand rottate Object.unity
     guid: 5830c44b2e91c8f46ade2ff2072296ee
   - enabled: 0
