@@ -9,6 +9,7 @@ public class SyncRotation : MonoBehaviour
     public GameObject childCube;
     [SerializeField]
     private Grabbable grabbable;
+
     void Start()
     {
         grabbable = GetComponent<Grabbable>();
@@ -19,8 +20,10 @@ public class SyncRotation : MonoBehaviour
     {
         if (grabbable.enabled)
         {
-
-            childCube.transform.rotation = parentCube.transform.rotation;
+            Quaternion childrod = childCube.transform.rotation;
+            Quaternion targetrod = parentCube.transform.rotation;
+            Quaternion newrod = Quaternion.Lerp(childrod, targetrod, Time.deltaTime * 1f);
+            childCube.transform.rotation = newrod;
         }
     }
 }

@@ -12,8 +12,8 @@ public class SwipeDetector : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Palm"))
-        {
+        //if (other.CompareTag("Palm"))
+        //{
             debugText.text = "Swiped"!;
 
             if (bonnet != null)
@@ -23,7 +23,7 @@ public class SwipeDetector : MonoBehaviour
                 charger.CrossFade("chargerAnim", 0, 0);
 
             Invoke("ResetDebugText", 5f);
-        }
+       // }
     }
 
     private void ResetDebugText()
