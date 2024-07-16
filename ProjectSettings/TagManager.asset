@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Palm
   - zone
+  - SamplesInfoPanel
+  - hand
   layers:
   - Default
   - TransparentFX

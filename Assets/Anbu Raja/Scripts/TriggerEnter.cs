@@ -5,10 +5,13 @@ using UnityEngine;
 public class TriggerEnter : MonoBehaviour
 {
 
-    private void OnTriggerEnter(Collider other)
+   public void Select()
     {
-        gameObject.GetComponent<BoxCollider>().enabled = false;
-        gameObject.SetActive(false);
+        Debug.Log("Hand Shape is correct");
+    }
 
+    public void unSelect()
+    {
+        Debug.Log("Hand is not in that pose");
     }
 }
